@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 export default function HeaderBtn() {
     const { data: session } = useSession()
+
     if (session) {
         return (
             <>

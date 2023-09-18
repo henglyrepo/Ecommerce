@@ -11,9 +11,9 @@ const dashboard = () => {
       <Link href='/'> Home </Link>
       
         <div className='flex items-center justify-center'>
-          <p>Hi {session?.user?.name}</p>
+          <p>Hi.!! {session?.user?.name}</p>
           <button onClick={() => signOut()} className='bg-red-500 text-white rounded-xl p-2 m-5 border'>Sign Out</button>
-          
+          <p>Email: {session?.user?.email}</p>
         </div>
         
     </div>

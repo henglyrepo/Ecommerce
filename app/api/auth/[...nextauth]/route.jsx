@@ -63,12 +63,6 @@ export const authOptions = {
 
                 return user;
             },
-            callbacks: {
-                async jwt({ token }) {
-                    token.role = user.role
-                    return token 
-                    }
-                }
         }),  
     ],
     secret: process.env.SECRET,
