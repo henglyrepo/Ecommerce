@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 const dashboard = () => {
     const { data:session } = useSession()
+
   return (
     <div>
       <h1 className='text-xl text-blue-500 font-bold mx-auto text'>Dashboard</h1>

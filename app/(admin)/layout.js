@@ -8,6 +8,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Admin from './Admin/page'
 
+
 const poppins = Poppins({ 
   subsets: ['latin'],
   weight: ['400', '500', '600', '700']
@@ -20,8 +21,9 @@ export const metadata = {
 
 
 export default function adminLayout() {
-    return (
-        <html lang="en">
+  return (
+    <>
+      <html lang="en">
           <body className={poppins.className}>
             <div className='max-w-7xl mx-auto px-5'>
                 <Provider>
@@ -31,7 +33,8 @@ export default function adminLayout() {
                   <Footer />
                 </Provider>
             </div>
-    
           </body>
-        </html>)
+        </html>
+      </>
+  )  
 }
