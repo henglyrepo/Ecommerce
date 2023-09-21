@@ -1,5 +1,6 @@
+
 export default function admin() {
   return (
-    <div> this is admin portal</div>
+    <div>dont know what it is</div>
   )
 }

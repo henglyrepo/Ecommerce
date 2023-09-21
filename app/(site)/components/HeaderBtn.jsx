@@ -8,8 +8,11 @@ export default function HeaderBtn() {
     if (session) {
         return (
             <>
-                 <Link href="/dashboard">
+                <Link href="/dashboard">
                     <button className='h-10 text-blue rounded-xl px-2 '>Dashboard</button>
+                </Link>
+                <Link href="/cart">
+                    <button className='h-10 text-blue rounded-xl px-2 '>Cart</button>
                 </Link>
                     <button onClick={() => signOut()} className='h-10 text-blue rounded-xl px-2 '>Sign Out</button>
             </>

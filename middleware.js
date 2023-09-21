@@ -14,11 +14,11 @@ export async function middleware(request) {
         return NextResponse.rewrite(new URL('/admin', request.url))
     } else {
         if (!session) {
-            if (request.nextUrl.pathname.startsWith('/dashboard')) {
+            if (request.nextUrl.pathname.startsWith('/dashboard' || '/cart')) {
                 return NextResponse.redirect(new URL('/login', request.url))
             }
             return NextResponse.redirect(new URL('/dashboard', request.url))
-            
+
         }
     }
 }
@@ -27,6 +27,7 @@ export async function middleware(request) {
 export const config = {
     matcher: [
         '/admin',
-        '/dashboard'
+        '/dashboard',
+        '/cart'
     ]
 }
