@@ -34,7 +34,7 @@ const Header = () => {
             <ul className=''>
                 <div className='w-full grid grid-cols-3 items-center'>
                     <div className='flex gap-20 m-5 py-5 '>
-                        <h1 className='text-3xl text-blue-500 font-bold mx-auto text'>LOGO</h1>
+                        <h1 className='text-3xl text-blue-500 font-bold mx-auto text'>Orussey</h1>
                     </div>
                     <div className='flex gap-5 mx-5 py-5 '>
                         {navItems.map((link, index) => (

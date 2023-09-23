@@ -1,5 +1,3 @@
-"use client"
-import { useState, useEffect } from "react"
 import Image from "next/image";
 
 export default function Products({products}) {
@@ -20,8 +18,7 @@ export default function Products({products}) {
                         <div className="text-gray-500">{product.category}</div>
                         <div className="font-bold">{product.title}</div>
                         <div className="text-gray-500 truncate ">{product.description}...</div>
-                        
-                        
+                
                     </a>
                 ))}
             </div>

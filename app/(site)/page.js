@@ -9,6 +9,7 @@ import SearchProducts from './components/SearchProducts.jsx'
 import Category from './components/Categories.jsx'
 import { useState, useEffect } from 'react'
 
+
 export default function Home() {
   // const session = await getServerSession(authOptions)
   const [products, setProducts] = useState([])

@@ -1,4 +1,4 @@
-import getProduct from "../../../libs/productPage/getProduct.js";
+import getProduct from "../../../libs/productPage/getProduct";
 
 
 export default async function productPage({ params: { id } }) {
